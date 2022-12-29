@@ -1,9 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Incuba</title>
-</head>
-<body>
-hola
-</body>
+	<head>
+		<!--css-->
+		<link rel="stylesheet" href="materialize/css/materialize.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="estilo.css">
+		<!--scripts-->
+		<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+		<script src="acciones.js"></script>
+		<title>Incuba</title>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a class="cian" href="#propia"></a></li>
+				<li><a class="verde" href="#formulario"></a></li>
+				<li><a class="amarillo" href="#premio"></a></li>
+				<li><a class="rojo" href="#genera"></a></li>
+				<li><a class="violeta" href="#accion"></a></li>
+			</ul>
+		</div>
+		<div class="seccion">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.svg" alt="incuba">
+					<p>Incubación e I+D+i de proyectos tecnológicos cooperativos</p>
+				</div>
+			</div>	
+		</div>
+		<!-- Armá tu propia cooperativa -->
+		<div id="propia" class="seccion cian color-blanco">
+			<div class="container">
+				<div class="row">
+					<div class="titulo col l5 m6 s12">
+						<h2>Armá tu propia cooperativa</h2>
+					</div>
+					<div class="texto col l7 m6 s12">
+						<div class="icono color-verde">
+							<img class="responsive-img" src="img/planta.png">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- formulario -->
+		<div id="formulario" class="seccion gris-claro color-verde">
+			<div class="container">
+				<div class="row">
+					<div class="titulo col l5 m6 s12">
+						<h2>Escribinos ahora y empezamos a trabajar en equipo</h2>
+					</div>
+					<div class="texto col l7 m6 s12">
+						<div class="icono color-gris">
+							<img class="responsive-img" src="img/escribir.png">
+						</div>
+						<form action="">
+							<div class="input-field">
+								<i class="material-icons prefix">account_circle</i>
+								<input placeholder="Nombre" id="nombre" type="text">
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">email</i>
+								<input placeholder="Correo electrónico" id="mail" type="email">
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">phone</i>
+								<input placeholder="Teléfono" id="telefono" type="tel">
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">domain</i>
+								<input placeholder="Cooperativa" id="cooperativa" type="text">
+							</div>
+							<input type="submit" value="Enviar" class="btn-large verde">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Premio -->
+		<div id="premio" class="seccion amarillo color-blanco">
+			<div class="container">
+				<div class="row">
+					<div class="titulo col l5 m6 s12">
+						<h2>Premio a la innovacion cooperativa</h2>
+					</div>
+					<div class="texto col l7 m6 s12">
+						<div class="icono color-rojo">
+							<img class="responsive-img" src="img/medalla.png">
+						</div>
+						<p>Establecer un concurso anual que premia proyectos de innovación cooperativa. El premio no solo otorga dinero al proyecto ganador sino que a los finalistas los invita a participar de un proceso de incubación del proyecto para conseguir impulsarlo.</p>
+						<p>El premio funciona como acción troncal para fomentar la innovación en proyectos cooperativos y generar nuevas cooperativas de base tecnológica.</p>
+						<p>Fecha posible: Julio – día de las cooperativas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- genera -->
+		<div id="genera" class="seccion color-rojo">
+			<div class="container">
+				<div class="row">
+					<div class="titulo col l5 m6 s12">
+						<h2>Generá tu área de innovacion cooperativa</h2>
+					</div>
+					<div class="texto col l7 m6 s12">
+						<div class="icono">
+							<img class="responsive-img" src="img/lanzamiento.png">
+						</div>
+						<p class="color-gris">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- lineas de accion -->
+		<div id="accion" class="seccion gris-claro color-violeta">
+			<div class="container">
+				<div class="row flex">
+					<div class="col s12 m6 l3">
+						<div class="int violeta color-blanco">
+							<h3>PRE INCUBACIÓN</h3>
+							<h4>Interesados</h4>
+							<p>Talleres</p>
+							<p>Reuniones de sensibilización</p>
+							<p>Charlas</p>
+						</div>
+					</div>
+					<div class="col s12 m6 l3">
+						<div class="int violeta color-blanco">
+							<h3>INCUBACIÓN</h3>
+							<h4>Starters</h4>
+							<p>Asesoramiento</p>
+							<p>Contactos comerciales</p>
+							<p>Consultorías</p>
+							<p>Comunicación</p>
+						</div>
+					</div>
+					<div class="col s12 m6 l3">
+						<div class="int violeta color-blanco">
+							<h3>ACELERACIÓN</h3>
+							<h4>Starters Cooperativos</h4>
+							<p>Búsquedas de recursos</p>
+							<p>Consultorías</p>
+						</div>
+					</div>
+					<div class="col s12 m6 l3">
+						<div class="int violeta color-blanco">
+							<h3>i + D + I</h3>
+							<h4>Cooperativas</h4>
+							<p>Prototipado</p>
+							<p>Proyección comercial</p>
+							<p>Lab</p>
+							<p>Concurso</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="titulo col l5 m6 s12">
+						<h2 class="sin-icono">Lineas de acción</h2>
+					</div>
+					<div class="texto col l7 m6 s12">
+						<p class="color-gris">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
